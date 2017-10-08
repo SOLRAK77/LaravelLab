@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('content')
  <div class="title m-b-md">
@@ -7,5 +7,7 @@
 @endsection
 
 @section('title')
+    <div class="primary">
     Acerca de...
+    </div>
 @endsection
