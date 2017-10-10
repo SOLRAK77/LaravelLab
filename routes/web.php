@@ -15,3 +15,6 @@ Route::get('/', 'PagesController@welcome' );
 
 /*Pagina Acerca de*/
 Route::get('/acerca', 'PagesController@about');
+
+/**/
+Route::get('mensajes/{mensaje}','MensajesController@show');

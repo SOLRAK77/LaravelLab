@@ -15,7 +15,7 @@ class UpdTablaMensajes extends Migration
     {
         Schema::table('mensajes', function (Blueprint $table) {
             //
-            $table->string('mensajes');
+            $table->string('mensaje');
             $table->string('image');
             $table->index('created_at','indx_mensajes');
         });
