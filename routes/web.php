@@ -18,3 +18,6 @@ Route::get('/acerca', 'PagesController@about');
 
 /**/
 Route::get('mensajes/{mensaje}','MensajesController@show');
+
+/*Crear mensaje*/
+Route::post('mensajes/create','MensajesController@create');
