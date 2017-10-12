@@ -13,7 +13,7 @@ class CreateMensajesRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,8 +23,15 @@ class CreateMensajesRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
-        ];
+       return [
+           'txtMensaje' => ['required','max:40']
+       ];
+    }
+
+    public function mensajes (){
+       return [
+            'txtMensaje.required' => 'Por favor, escribe tu mensaje',
+            'txtMensaje.max' => 'El mensaje no pued e ser mayor a 10'
+       ];
     }
 }
