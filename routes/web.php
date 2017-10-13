@@ -21,3 +21,7 @@ Route::get('mensajes/{mensaje}','MensajesController@show');
 
 /*Crear mensaje*/
 Route::post('mensajes/create','MensajesController@create');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
